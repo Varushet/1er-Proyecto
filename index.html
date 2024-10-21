@@ -10,6 +10,11 @@
             padding: 0;
             margin: 0;
         }
+        ul {
+            list-style: none;
+            margin-right: 0%;
+        }
+        /* codigo pagina */
         header, nav, main, footer{width: 80%; margin: 0 auto;}
         header {
             min-height: 8rem;
@@ -26,6 +31,19 @@
             justify-content: space-evenly;
             flex-wrap: wrap;
         }
+        main div{
+            width: 30%;
+            min-height: 5rem;
+            background-color: lightgray;
+            border: 0.02rem solid red;
+        }
+        a{text-decoration: none; color: black}
+        main div a {
+            font-size: 1.2rem;
+            color: brown;
+            font-weight: 600;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
         footer{
             min-height: 7rem;
             background-color: chartreuse;
@@ -33,20 +51,40 @@
         .borde{
             border: 0.3rem solid black ; 
         }
-        main div{
-            width: 30%;
-            min-height: 5rem;
-            background-color: lightgray;
-            border: 0.02rem solid red;
-        }
         .izquierda{
             background-color: hsla(180, 100%, 50%, 0.438);
         }
         .derecha{
             background-color: green;
         }
-        a{text-decoration: none;}
-        /* codigo pagina */
+        ul{ 
+            min-height: 4rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        ul li {
+            width: 5rem;
+            height: 2rem;
+            background-color: burlywood;
+            border: 0.1rem solid green;
+            margin: 0.5rem;
+        }
+        ul li a{
+            font-size: 1rem;
+            text-align: center;
+            display: block;
+            text-align: center;
+            padding-top: 0.5rem;
+            border-radius: 0.4rem;
+            background-color: rgb(160, 139, 160) ;
+            color: green;
+        }
+        ul li a:hover{
+            color: purple ;
+            background-color: green;
+            transition: 500ms;
+        }
     </style>
 </head>
 <body>
@@ -54,14 +92,20 @@
 
     </header>
     <nav class="borde">
-
+        <ul>
+            <li class="menu"><a href="">enlace1</a></li>
+            <li class="menu"><a href="">enlace2</a></li>
+            <li class="menu"><a href="">enlace3</a></li>
+            <li class="menu"><a href="">enlace4</a></li>
+            <li class="menu"><a href="">enlace5</a></li>
+        </ul>
     </nav>
     <main id="principal">
-        <div class="izquierda">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nostrum cumque molestias maxime ut est expedita facere tenetur accusamus similique consequuntur nulla eligendi rem, aut omnis itaque blanditiis quibusdam delectus.</div>
+        <div class="izquierda">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nostrum cumque molestias maxime ut est expedita facere <a href="#" target="_blank">Soluta</a> tenetur accusamus similique consequuntur nulla eligendi rem, aut omnis itaque blanditiis quibusdam delectus.
+        </div>
         <div class="derecha">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptatem sint nam corporis molestiae cupiditate reiciendis! Ab earum sequi neque velit dolorem incidunt nulla molestias blanditiis dicta, quos esse voluptatem.</div>
         <div class="centro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptatem sint nam corporis molestiae cupiditate reiciendis! Ab earum sequi neque velit dolorem incidunt nulla molestias blanditiis dicta, quos esse voluptatem.</div>
         <div class="otro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptatem sint nam corporis molestiae cupiditate reiciendis! Ab earum sequi neque velit dolorem incidunt nulla molestias blanditiis dicta, quos esse voluptatem.</div>
-        
     </main>
     <footer class="borde">
 
